@@ -1,5 +1,5 @@
 import React from "react";
-import pdf from "/Users/pallabighoshdas/Desktop/reacttemplate/src/resume.pdf";
+import pdf from "./resume.pdf";
 
 class About extends React.Component {
   render() {
