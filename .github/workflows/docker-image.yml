@@ -19,6 +19,10 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
+      - name: log in to HEROKU container registry 
+        env: 
+          HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+        run: heroku container:login
       - name: Log in to the Container registry
         uses: docker/login-action@v2
         with:
